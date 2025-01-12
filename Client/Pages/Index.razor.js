@@ -86,11 +86,10 @@ var eyeBlinkFunction;
 
 /**
  *
- * @param {string} modelPath 
- * @param {boolean} editable
+ * @param {string} modelPath
  * @returns {Promise<L2dModel>}
  */
-export async function loadModel(modelPath, editable) {
+export async function loadModel(modelPath) {
     console.log(`Attempting to load L2D model from ${modelPath}`);
 
     l2dApp = new PIXI.Application({
