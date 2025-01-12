@@ -82,7 +82,7 @@
                             @if (selectedModelObject?.Parameters is not null)
                             {
                                 var acc = 0;
-                                <div class="pt-3 pb-3" style="max-height: 90vh; overflow-y: auto">
+                                <div class="pt-3 pb-3" style="max-height: 80vh; overflow-y: auto">
                                     @foreach (var parameter in selectedModelObject.Parameters)
                                     {
                                         <MudSlider Class="pt-2" Max="@selectedModelObject.ParametersValueRange.MaxValues[acc]" 
