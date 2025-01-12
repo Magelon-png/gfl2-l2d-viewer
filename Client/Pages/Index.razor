@@ -85,17 +85,21 @@
                             @if (selectedModelObject?.Parameters is not null)
                             {
                                 var acc = 0;
-                                <div class="pt-3 pb-3" style="max-height: 80vh; overflow-y: auto">
+                                <div class="pt-3 pb-3" style="max-height: 80vh; max-width: 90%; overflow-y: auto; margin: auto;">
                                     @foreach (var parameter in selectedModelObject.Parameters)
                                     {
-                                        <MudSlider Class="pt-2" Max="@selectedModelObject.ParametersValueRange.MaxValues[acc]" 
-                                                   Min="@selectedModelObject.ParametersValueRange.MinValues[acc]" 
-                                                   Value="@selectedModelObject.ParametersValueRange.DefaultValues[acc]"
-                                                   Step="0.01" ValueLabel="true"
-                                                   ValueLabelFormat="0.00"
-                                                   T="double"
-                                                   ValueChanged="@(async (newValue) => await OnModelParameterChanged(parameter, newValue))">
-                                            @parameter</MudSlider>
+                                        <div style="max-width: 90%; margin: auto; display: block">
+                                            <MudSlider
+                                                Class="pt-2" Max="@selectedModelObject.ParametersValueRange.MaxValues[acc]"
+                                                Min="@selectedModelObject.ParametersValueRange.MinValues[acc]"
+                                                Value="@selectedModelObject.ParametersValueRange.DefaultValues[acc]"
+                                                Step="0.01" ValueLabel="true"
+                                                ValueLabelFormat="0.00"
+                                                T="double"
+                                                ValueChanged="@(async (newValue) => await OnModelParameterChanged(parameter, newValue))">
+                                                @parameter</MudSlider>
+                                        </div>
+                                        
                                         acc++;
                                     }
                                     
