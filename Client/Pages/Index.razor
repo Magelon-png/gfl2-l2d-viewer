@@ -24,9 +24,13 @@
 
                 @if (selectedModelObject is not null)
                 {
-                    <MudTabs Class="pt-3 pb-3">
+                    <MudTabs KeepPanelsAlive="true" Class="pt-3 pb-3">
                         <MudTabPanel  Text="Interactions">
                             <div class="pt-3 pb-3">
+                                <MudCheckBox Label="Enable parameter editing (Disable blinking)"
+                                    @bind-Value="parameterEditingEnabled" @bind-Value:after="OnParameterEditingEnabledChange">
+                                    
+                                </MudCheckBox>
                                 @if (selectedModelObject?.Expressions is not null && selectedModelObject.Expressions.Length > 0)
                                 {
                                     <MudSelect Class="pt-2" Label="Select an expression" Placeholder="Default"
@@ -74,14 +78,24 @@
 
                         <MudTabPanel Text="Parameters"
                                      Disabled="@(selectedModelObject?.Parameters is null || selectedModelObject?.Parameters.Length == 0 
-                                                 || !selectedModelEditable)">
+                                                 || !parameterEditingEnabled)">
                             @if (selectedModelObject?.Parameters is not null)
                             {
-                                <div class="pt-3 pb-3">
+                                var acc = 0;
+                                <div class="pt-3 pb-3" style="max-height: 90vh; overflow-y: auto">
                                     @foreach (var parameter in selectedModelObject.Parameters)
                                     {
-                                        <MudText Typo="Typo.body1">@parameter</MudText>
+                                        <MudSlider Class="pt-2" Max="@selectedModelObject.ParametersValueRange.MaxValues[acc]" 
+                                                   Min="@selectedModelObject.ParametersValueRange.MinValues[acc]" 
+                                                   Value="@selectedModelObject.ParametersValueRange.DefaultValues[acc]"
+                                                   Step="0.01" ValueLabel="true"
+                                                   ValueLabelFormat="0.00"
+                                                   T="double"
+                                                   ValueChanged="@(async (newValue) => await OnModelParameterChanged(parameter, newValue))">
+                                            @parameter</MudSlider>
+                                        acc++;
                                     }
+                                    
                                 </div>
                             }
                         </MudTabPanel>

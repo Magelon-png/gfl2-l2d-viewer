@@ -30,6 +30,27 @@ class L2dExpression {
     }
 }
 
+class L2dParameterValueRanges {
+    /**
+     * @param {Object.<number, number>} minValues
+     * @param {Object.<number, number>} maxValues
+     * @param {Live2DModel} model
+     */
+    constructor(minValues, maxValues, model) {
+        this.minValues = minValues.map(num => parseFloat(num).toFixed(1));
+        this.maxValues = maxValues.map(num => parseFloat(num).toFixed(1));
+        /**
+         *
+         * @type {number[]}
+         */
+        const defaultValueArray = [];
+        for (let i = 0; i < minValues.length; i++) {
+            defaultValueArray.push(parseFloat(model.internalModel.coreModel.getParameterValueByIndex(i)));
+        }
+        this.defaultValues = defaultValueArray;
+    }
+}
+
 class L2dModel {
     /**
      * 
@@ -37,14 +58,15 @@ class L2dModel {
      * @param {L2dExpression[]?} expressions
      * @param {number} scale
      * @param {string[]} parameters
+     * @param {L2dParameterValueRanges} parametersValueRange
      * @param {boolean} editable
      */
-    constructor(motions, expressions, scale, parameters, editable) {
+    constructor(motions, expressions, scale, parameters,parametersValueRange) {
         this.motions = motions;
         this.expressions = expressions;
         this.scale = scale;
         this.parameters = parameters;
-        this.editable = editable;
+        this.parametersValueRange = parametersValueRange;
     }
 }
 
@@ -58,6 +80,8 @@ var l2dApp;
  * @type {Live2DModel}
  */
 var l2dModel;
+
+var eyeBlinkFunction;
 
 
 /**
@@ -78,12 +102,8 @@ export async function loadModel(modelPath, editable) {
     l2dModel = await PIXI.live2d.Live2DModel.from(modelPath);
 
     l2dApp.stage.addChild(l2dModel);
-
-    //Disable eye blinking if loaded as editable
-    //If eye blinking is working => Cannot edit parameters
-    if(editable === true) {
-        l2dModel.internalModel.eyeBlink = undefined
-    }
+    
+    eyeBlinkFunction = l2dModel.internalModel.eyeBlink;
 
     l2dModel.interactive = false;
 
@@ -100,7 +120,8 @@ export async function loadModel(modelPath, editable) {
     const returnValue = new L2dModel(l2dModel.internalModel.settings?.motions,
         l2dModel.internalModel.settings?.expressions, scale, 
         l2dModel.internalModel.coreModel._parameterIds,
-        editable);
+        new L2dParameterValueRanges(l2dModel.internalModel.coreModel._parameterMinimumValues,
+            l2dModel.internalModel.coreModel._parameterMaximumValues, l2dModel));
     
     console.log(JSON.stringify(returnValue));
     
@@ -161,7 +182,17 @@ export function setParameter(name, value) {
     }
 }
 
+/**
+ * 
+ * @param {boolean} enabled
+ */
+export function enableParameterEditing(enabled) {
+    if(l2dModel && l2dApp && eyeBlinkFunction) {
+        l2dModel.internalModel.eyeBlink = !enabled ? eyeBlinkFunction : undefined;
+    }
+}
 
+//#region dragging
 //Dragging based on https://www.w3schools.com/howto/howto_js_draggable.asp
 dragElement(document.getElementById("canvas"));
 
@@ -205,3 +236,4 @@ function dragElement(elmnt) {
         document.onmousemove = null;
     }
 }
+//#endregion

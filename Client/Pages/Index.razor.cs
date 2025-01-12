@@ -20,6 +20,7 @@ public partial class Index
     public string? selectedModel = null;
     public string? selectedExpression = null;
     public bool eyeTrackingEnabled = false;
+    public bool parameterEditingEnabled = false;
     public double modelScale;
     public L2dModel? selectedModelObject;
 
@@ -62,7 +63,8 @@ public partial class Index
             }
             catch (Exception ex)
             {
-                Snackbar.Add("Failed to load the selected model", Severity.Error);
+                Snackbar.Add("Failed to load the selected model. Please check the console for more details.", Severity.Error);
+                Console.WriteLine(ex.Message);
                 selectedModelObject = null;
                 modelScale = 0;
             }
@@ -122,6 +124,16 @@ public partial class Index
         }
     }
 
+    public async Task OnParameterEditingEnabledChange()
+    {
+        Console.WriteLine($"Parameter editing is now {parameterEditingEnabled}");
+        if (module is not null)
+        {
+            await module.InvokeVoidAsync("enableParameterEditing", parameterEditingEnabled);
+            await InvokeAsync(() => StateHasChanged());
+        }
+    }
+
     async ValueTask IAsyncDisposable.DisposeAsync()
     {
         if (module is not null)
@@ -139,7 +151,9 @@ public partial class Index
     public record L2dExpression(string Name, string FilePath);
 
     public record L2dMotion(string File);
+    
+    public record L2dParameterValueRanges(Dictionary<int,double> MinValues, Dictionary<int,double> MaxValues, double[] DefaultValues);
 
     public record L2dModel(Dictionary<string, L2dMotion[]>? Motions, L2dExpression[]? Expressions, double Scale, 
-        string[]? Parameters, bool Editable = false);
+        string[]? Parameters, L2dParameterValueRanges ParametersValueRange);
 }
