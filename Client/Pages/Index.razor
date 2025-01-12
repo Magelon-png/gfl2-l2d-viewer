@@ -70,7 +70,7 @@
                             </div>
 
 
-                            <MudSlider Class="pt-2" Max="1.5" Min="0.01" Step="0.01" ValueLabel="true"
+                            <MudSlider Class="pt-2" Max="@maximumScale" Min="@minimumScale" Step="@scaleStep" ValueLabel="true"
                                        ValueLabelFormat="0.00"
                                        @bind-Value="modelScale" @bind-Value:after="OnModelScaleChanged">
                                 Scale: @modelScale</MudSlider>
@@ -108,7 +108,10 @@
         </MudContainer>
     </MudItem>
     <MudItem Style="overflow-x: hidden;" lg="8">
-        <canvas style="display: block; max-height: 90vh; margin: auto;" class="draggable" id="canvas"></canvas>
+        <div @onwheel="@(OnL2dScroll)">
+            <canvas style="display: block; max-height: 90vh; margin: auto;" class="draggable" id="canvas"></canvas>
+        </div>
+        
     </MudItem>
 
 

@@ -1,6 +1,7 @@
 ﻿using System.Net.Http.Json;
 using System.Text.Json;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.JSInterop;
 using MudBlazor;
 
@@ -22,9 +23,13 @@ public partial class Index
     private string? selectedModel = null;
     private string? selectedExpression = null;
     private bool parameterEditingEnabled = false;
+    private double minimumScale = 0.01;
+    private double maximumScale = 1.5;
+    private double scaleStep = 0.01;
     private double modelScale;
     private L2dModel? selectedModelObject;
     MudTabs? tabs;
+    
 
     protected override async Task OnInitializedAsync()
     {
@@ -130,6 +135,25 @@ public partial class Index
             await module.InvokeVoidAsync("enableParameterEditing", parameterEditingEnabled);
             await InvokeAsync(() => StateHasChanged());
         }
+    }
+
+    [JSInvokable]
+    public async Task OnL2dScroll(WheelEventArgs args)
+    {
+        if (isScrollUp(args.DeltaY) && modelScale < maximumScale)
+        {
+            modelScale += scaleStep * 5;
+        }
+        else if (modelScale > minimumScale)
+        {
+            modelScale -= scaleStep * 5;
+        }
+        //Convert double to 2 decimals to remove imprecision on the above operations
+        modelScale = Convert.ToDouble(modelScale.ToString("#.00"));
+        OnModelScaleChanged();
+        await InvokeAsync(() => StateHasChanged());
+        
+        bool isScrollUp(double delta) => delta < 0;
     }
 
     async ValueTask IAsyncDisposable.DisposeAsync()
