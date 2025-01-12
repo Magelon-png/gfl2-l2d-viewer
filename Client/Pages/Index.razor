@@ -70,10 +70,13 @@
                             </div>
 
 
-                            <MudSlider Class="pt-2" Max="@maximumScale" Min="@minimumScale" Step="@scaleStep" ValueLabel="true"
+                            <MudSlider Class="pt-2 pb-3" Max="@maximumScale" Min="@minimumScale" Step="@scaleStep" ValueLabel="true"
                                        ValueLabelFormat="0.00"
                                        @bind-Value="modelScale" @bind-Value:after="OnModelScaleChanged">
                                 Scale: @modelScale</MudSlider>
+
+                            <MudDivider Class="pb-3" DividerType="DividerType.FullWidth" />
+                            <MudLink Href="https://github.com/Magelon-png/gfl2-l2d-viewer">View source code on GitHub</MudLink>
                         </MudTabPanel>
 
                         <MudTabPanel Text="Parameters"
