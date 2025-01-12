@@ -16,13 +16,15 @@ public partial class Index
 
     private IJSObjectReference? module;
     private Dictionary<string, string>? Live2DMapping = null;
-    public bool selectedModelEditable = false;
-    public string? selectedModel = null;
-    public string? selectedExpression = null;
-    public bool eyeTrackingEnabled = false;
-    public bool parameterEditingEnabled = false;
-    public double modelScale;
-    public L2dModel? selectedModelObject;
+    
+    //UI bindings
+    private bool selectedModelEditable = false;
+    private string? selectedModel = null;
+    private string? selectedExpression = null;
+    private bool parameterEditingEnabled = false;
+    private double modelScale;
+    private L2dModel? selectedModelObject;
+    MudTabs? tabs;
 
     protected override async Task OnInitializedAsync()
     {
@@ -30,7 +32,7 @@ public partial class Index
         {
             ReadCommentHandling = JsonCommentHandling.Skip
         });
-        Live2DMapping = Live2DMapping.OrderBy(x => x.Key).ToDictionary();
+        Live2DMapping = Live2DMapping!.OrderBy(x => x.Key).ToDictionary();
     }
 
     protected async override Task OnAfterRenderAsync(bool firstRender)
@@ -44,7 +46,7 @@ public partial class Index
     public async void OnSelectedModelChanged()
     {
         Console.WriteLine($"Selected model is now at {selectedModel}");
-        if (module is not null)
+        if (module is not null && Live2DMapping is not null && selectedModel is not null)
         {
             try
             {
@@ -53,11 +55,7 @@ public partial class Index
                     selectedModelEditable);
                 if (selectedModelObject is not null)
                 {
-                    Console.WriteLine("Selected model from js is not null");
-                    Console.WriteLine(selectedModelObject.Motions?.Count);
-                    Console.WriteLine(selectedModelObject.Expressions?.Length);
-                    modelScale = selectedModelObject.Scale;
-                    selectedExpression = null;
+                    ResetValues();
 
                 }
             }
@@ -73,14 +71,14 @@ public partial class Index
         }
     }
 
-    public async void OnEyeTrackingEnabled()
+    public void ResetValues()
     {
-        Console.WriteLine($"Eye tracking set to {eyeTrackingEnabled}");
-
-        if (module is not null)
+        modelScale = selectedModelObject?.Scale ?? 0.2;
+        selectedExpression = null;
+        parameterEditingEnabled = false;
+        if (tabs is not null)
         {
-            await module.InvokeVoidAsync("setEyeTracking", eyeTrackingEnabled);
-            await InvokeAsync(() => StateHasChanged());
+            tabs.ActivatePanel(0);
         }
     }
 

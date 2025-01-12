@@ -24,7 +24,7 @@
 
                 @if (selectedModelObject is not null)
                 {
-                    <MudTabs KeepPanelsAlive="true" Class="pt-3 pb-3">
+                    <MudTabs @ref="tabs" KeepPanelsAlive="true" Class="pt-3 pb-3">
                         <MudTabPanel  Text="Interactions">
                             <div class="pt-3 pb-3">
                                 <MudCheckBox Label="Enable parameter editing (Disable blinking)"
