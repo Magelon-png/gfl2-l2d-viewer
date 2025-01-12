@@ -19,7 +19,6 @@ public partial class Index
     private Dictionary<string, string>? Live2DMapping = null;
     
     //UI bindings
-    private bool selectedModelEditable = false;
     private string? selectedModel = null;
     private string? selectedExpression = null;
     private bool parameterEditingEnabled = false;
@@ -56,8 +55,7 @@ public partial class Index
             try
             {
                 selectedModelObject = await module.InvokeAsync<L2dModel>("loadModel",
-                    $"L2D/{Live2DMapping[selectedModel]}/{Live2DMapping[selectedModel]}.model3.json",
-                    selectedModelEditable);
+                    $"L2D/{Live2DMapping[selectedModel]}/{Live2DMapping[selectedModel]}.model3.json");
                 if (selectedModelObject is not null)
                 {
                     ResetValues();
