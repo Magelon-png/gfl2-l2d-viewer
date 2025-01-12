@@ -1,0 +1,60 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "89b59399a10706d40a6b8842d3005cc3.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Deele_Angry_01",
+				"File": "expressions/EMO_Deele_Angry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Deele_Happy_01",
+				"File": "expressions/EMO_Deele_Happy_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Deele_Helpless_01",
+				"File": "expressions/EMO_Deele_Helpless_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Deele_Idle_01",
+				"File": "expressions/EMO_Deele_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Deele_Serious_01",
+				"File": "expressions/EMO_Deele_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Deele_Shy_01",
+				"File": "expressions/EMO_Deele_Shy_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Deele_Surprised_01",
+				"File": "expressions/EMO_Deele_Surprised_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Deele_Think_01",
+				"File": "expressions/EMO_Deele_Think_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Deele_Wry_01",
+				"File": "expressions/EMO_Deele_Wry_01.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

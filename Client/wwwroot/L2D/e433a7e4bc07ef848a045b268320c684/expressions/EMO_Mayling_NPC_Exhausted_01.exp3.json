@@ -1,0 +1,148 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -617957439535608110
+  },
+  "m_Name": "EMO_Mayling_NPC_Exhausted_01.exp3",
+  "Type": "Live2D Expression",
+  "Name": "EMO_Mayling_NPC_Exhausted_01",
+  "FadeInTime": 0.15,
+  "FadeOutTime": 0.15,
+  "Parameters": [
+    {
+      "Id": "ParamEyeLOpen",
+      "Value": 0.70500004,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeLSmile",
+      "Value": 0.357,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeROpen",
+      "Value": 0.71500003,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeRSmile",
+      "Value": 0.405,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeX",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeY",
+      "Value": -0.286,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeszoom",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamTEAR",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyehigtlight",
+      "Value": 0.503,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLY",
+      "Value": -0.535,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRY",
+      "Value": -0.465,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLX",
+      "Value": -0.369,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRX",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLAngle",
+      "Value": -0.248,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRAngle",
+      "Value": -0.221,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLForm",
+      "Value": -0.732,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRForm",
+      "Value": -0.54,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamMouthForm",
+      "Value": -0.48000002,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamCheek",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamFace2",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param2",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param4",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param5",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param6",
+      "Value": 0.0,
+      "Blend": 0
+    }
+  ]
+}

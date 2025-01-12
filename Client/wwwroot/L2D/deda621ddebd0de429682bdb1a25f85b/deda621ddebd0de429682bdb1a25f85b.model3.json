@@ -1,0 +1,28 @@
+{
+  "Version": 3,
+  "Name": "deda621ddebd0de429682bdb1a25f85b",
+  "FileReferences": {
+    "Moc": "deda621ddebd0de429682bdb1a25f85b.moc3",
+    "Textures": [
+	"textures/texture_00.png"
+	],
+    "Physics": null,
+    "Motions": {},
+    "Expressions": []
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": []
+    }
+  ]
+}

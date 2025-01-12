@@ -1,0 +1,36 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "98bb9753bb226a74fb917a7052b2598b.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Vladimir_Idle_01",
+				"File": "expressions/EMO_Vladimir_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vladimir_Smile_01",
+				"File": "expressions/EMO_Vladimir_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vladimir_Think_01",
+				"File": "expressions/EMO_Vladimir_Think_01.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

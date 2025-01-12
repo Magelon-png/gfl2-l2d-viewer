@@ -1,0 +1,68 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "e13bf2b9f4ac5ec469eff35b833bce86.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Dandelion_Idle",
+				"File": "expressions/EMO_Dandelion_Idle.exp3.json"
+			},
+			{
+				"Name": "EMO_Dandelion_Serious",
+				"File": "expressions/EMO_Dandelion_Serious.exp3.json"
+			},
+			{
+				"Name": "EMO_Dandelion_smile",
+				"File": "expressions/EMO_Dandelion_smile.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

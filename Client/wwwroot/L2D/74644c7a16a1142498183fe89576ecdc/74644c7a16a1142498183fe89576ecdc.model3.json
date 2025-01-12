@@ -1,0 +1,120 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "74644c7a16a1142498183fe89576ecdc.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Colphne_N_Angry_01",
+				"File": "expressions/EMO_Colphne_N_Angry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Complain_01",
+				"File": "expressions/EMO_Colphne_N_Complain_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Cry_01",
+				"File": "expressions/EMO_Colphne_N_Cry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Dislike_01",
+				"File": "expressions/EMO_Colphne_N_Dislike_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Idle_01",
+				"File": "expressions/EMO_Colphne_N_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Pleasant_01",
+				"File": "expressions/EMO_Colphne_N_Pleasant_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Rage_01",
+				"File": "expressions/EMO_Colphne_N_Rage_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Ridicule_01",
+				"File": "expressions/EMO_Colphne_N_Ridicule_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Serious_01",
+				"File": "expressions/EMO_Colphne_N_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Silent_01",
+				"File": "expressions/EMO_Colphne_N_Silent_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Smile_01",
+				"File": "expressions/EMO_Colphne_N_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Tear_01",
+				"File": "expressions/EMO_Colphne_N_Tear_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Tender_01",
+				"File": "expressions/EMO_Colphne_N_Tender_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Tentative_01",
+				"File": "expressions/EMO_Colphne_N_Tentative_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Think_01",
+				"File": "expressions/EMO_Colphne_N_Think_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Colphne_N_Uneasy_01",
+				"File": "expressions/EMO_Colphne_N_Uneasy_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

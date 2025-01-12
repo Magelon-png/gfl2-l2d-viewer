@@ -1,0 +1,247 @@
+{
+  "Type": "Live2D Expression",
+  "FadeInTime": 0.15,
+  "FadeOutTime": 0.15,
+  "Parameters": [
+    {
+      "Id": "Param25",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param23",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param24",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeROpen",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeLOpen",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamMouthForm",
+      "Value": 0.8,
+      "Blend": 0
+    },
+    {
+      "Id": "Param6",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param22",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param21",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallX",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param14",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param15",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLY",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRY",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLForm",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param12",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param13",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamMouthOpenY",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_1_ArtMesh43",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_2_ArtMesh43",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_3_ArtMesh43",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_4_ArtMesh43",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_5_ArtMesh43",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_1_ArtMesh44",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_2_ArtMesh44",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_3_ArtMesh44",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_4_ArtMesh44",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_5_ArtMesh44",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_1_ArtMesh45",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_2_ArtMesh45",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_3_ArtMesh45",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_4_ArtMesh45",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_5_ArtMesh45",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_1_ArtMesh53",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_2_ArtMesh53",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_3_ArtMesh53",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_4_ArtMesh53",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_5_ArtMesh53",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_1_ArtMesh54",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_3_ArtMesh54",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_2_ArtMesh54",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_4_ArtMesh54",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_5_ArtMesh54",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_1_ArtMesh55",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_2_ArtMesh55",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_3_ArtMesh55",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_4_ArtMesh55",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param_Angle_Rotation_5_ArtMesh55",
+      "Value": 0.0,
+      "Blend": 0
+    }
+  ]
+}

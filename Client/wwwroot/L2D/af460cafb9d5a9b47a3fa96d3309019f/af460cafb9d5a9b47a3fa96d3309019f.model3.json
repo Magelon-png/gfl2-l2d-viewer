@@ -1,0 +1,112 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "af460cafb9d5a9b47a3fa96d3309019f.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Biyoca_Angry_01",
+				"File": "expressions/EMO_Biyoca_Angry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Doubt_01",
+				"File": "expressions/EMO_Biyoca_Doubt_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Excited_01",
+				"File": "expressions/EMO_Biyoca_Excited_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Idle_01",
+				"File": "expressions/EMO_Biyoca_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Pain_01",
+				"File": "expressions/EMO_Biyoca_Pain_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Pretend_01",
+				"File": "expressions/EMO_Biyoca_Pretend_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Serious_01",
+				"File": "expressions/EMO_Biyoca_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Shock_01",
+				"File": "expressions/EMO_Biyoca_Shock_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Smile_01",
+				"File": "expressions/EMO_Biyoca_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Smirk_01",
+				"File": "expressions/EMO_Biyoca_Smirk_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Sorrow",
+				"File": "expressions/EMO_Biyoca_Sorrow.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Surprised_01",
+				"File": "expressions/EMO_Biyoca_Surprised_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Think_01",
+				"File": "expressions/EMO_Biyoca_Think_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Biyoca_Wronged_01",
+				"File": "expressions/EMO_Biyoca_Wronged_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

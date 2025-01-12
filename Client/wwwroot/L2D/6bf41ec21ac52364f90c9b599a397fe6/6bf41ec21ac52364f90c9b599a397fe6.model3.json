@@ -1,0 +1,104 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "6bf41ec21ac52364f90c9b599a397fe6.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Vepley_Confused_01",
+				"File": "expressions/EMO_Vepley_Confused_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Depression_01",
+				"File": "expressions/EMO_Vepley_Depression_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Diffident_01",
+				"File": "expressions/EMO_Vepley_Diffident_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Dissatisfied_01",
+				"File": "expressions/EMO_Vepley_Dissatisfied_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Excited_01",
+				"File": "expressions/EMO_Vepley_Excited_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Idle_01",
+				"File": "expressions/EMO_Vepley_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Proud_01",
+				"File": "expressions/EMO_Vepley_Proud_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Serious_01",
+				"File": "expressions/EMO_Vepley_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Smile_01",
+				"File": "expressions/EMO_Vepley_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Starryeye_01",
+				"File": "expressions/EMO_Vepley_Starryeye_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Surprised_01",
+				"File": "expressions/EMO_Vepley_Surprised_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Vepley_Think_01",
+				"File": "expressions/EMO_Vepley_Think_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"NTP": [
+				{
+					"File": "motions/NTP.motion3.json"
+				}
+			],
+			"TP": [
+				{
+					"File": "motions/TP.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

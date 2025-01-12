@@ -1,0 +1,74 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "702aa4331f2517f428250b4197ff8dcf.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Lotta_Anxiety_01",
+				"File": "expressions/EMO_Lotta_Anxiety_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Lotta_Confused_01",
+				"File": "expressions/EMO_Lotta_Confused_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Lotta_Happy_01",
+				"File": "expressions/EMO_Lotta_Happy_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Lotta_Idle_01",
+				"File": "expressions/EMO_Lotta_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Lotta_Serious_01",
+				"File": "expressions/EMO_Lotta_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Lotta_Smile_01",
+				"File": "expressions/EMO_Lotta_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Lotta_Worry_01",
+				"File": "expressions/EMO_Lotta_Worry_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

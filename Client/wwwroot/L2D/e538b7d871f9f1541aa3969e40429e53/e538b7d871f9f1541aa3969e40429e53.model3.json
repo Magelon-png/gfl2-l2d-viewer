@@ -1,0 +1,72 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "e538b7d871f9f1541aa3969e40429e53.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Darcular_Idle_01",
+				"File": "expressions/EMO_Darcular_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Darcular_Rage_01",
+				"File": "expressions/EMO_Darcular_Rage_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Darcular_Ridicule_01",
+				"File": "expressions/EMO_Darcular_Ridicule_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Darcular_Smile_01",
+				"File": "expressions/EMO_Darcular_Smile_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

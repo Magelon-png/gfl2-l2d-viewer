@@ -1,0 +1,86 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "1e4020842cb6f42498e3511c1204ec39.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Ullrid_Angry_01",
+				"File": "expressions/EMO_Ullrid_Angry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Anxiety_01",
+				"File": "expressions/EMO_Ullrid_Anxiety_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Confused_01",
+				"File": "expressions/EMO_Ullrid_Confused_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Embarrassed_01",
+				"File": "expressions/EMO_Ullrid_Embarrassed_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Happy_01",
+				"File": "expressions/EMO_Ullrid_Happy_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Idle_01",
+				"File": "expressions/EMO_Ullrid_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Shy_01",
+				"File": "expressions/EMO_Ullrid_Shy_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Think_01",
+				"File": "expressions/EMO_Ullrid_Think_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Upset_01",
+				"File": "expressions/EMO_Ullrid_Upset_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ullrid_Vacillate_01",
+				"File": "expressions/EMO_Ullrid_Vacillate_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

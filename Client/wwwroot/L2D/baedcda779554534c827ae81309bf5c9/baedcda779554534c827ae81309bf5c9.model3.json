@@ -1,0 +1,88 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "baedcda779554534c827ae81309bf5c9.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Jiangyu_Awkward_01",
+				"File": "expressions/EMO_Jiangyu_Awkward_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Jiangyu_Cry_01",
+				"File": "expressions/EMO_Jiangyu_Cry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Jiangyu_Eager_01",
+				"File": "expressions/EMO_Jiangyu_Eager_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Jiangyu_Idle_01",
+				"File": "expressions/EMO_Jiangyu_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Jiangyu_Mad_01",
+				"File": "expressions/EMO_Jiangyu_Mad_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Jiangyu_Serious_01",
+				"File": "expressions/EMO_Jiangyu_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Jiangyu_Smile_01",
+				"File": "expressions/EMO_Jiangyu_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Jiangyu_Surprised_01",
+				"File": "expressions/EMO_Jiangyu_Surprised_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

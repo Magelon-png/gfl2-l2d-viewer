@@ -1,0 +1,92 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "4dd93fd6e0112ed4dbeafb751d0f4d1c.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Ksenia_Angry_01",
+				"File": "expressions/EMO_Ksenia_Angry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ksenia_Helplsee_01",
+				"File": "expressions/EMO_Ksenia_Helplsee_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ksenia_Idle_01",
+				"File": "expressions/EMO_Ksenia_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ksenia_Nervous_01",
+				"File": "expressions/EMO_Ksenia_Nervous_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ksenia_Shy_01",
+				"File": "expressions/EMO_Ksenia_Shy_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ksenia_Smile_01",
+				"File": "expressions/EMO_Ksenia_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ksenia_Smirk_01",
+				"File": "expressions/EMO_Ksenia_Smirk_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ksenia_Surprised_01",
+				"File": "expressions/EMO_Ksenia_Surprised_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Ksenia_Think_01",
+				"File": "expressions/EMO_Ksenia_Think_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

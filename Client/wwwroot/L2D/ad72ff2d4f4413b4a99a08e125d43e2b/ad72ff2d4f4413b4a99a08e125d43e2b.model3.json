@@ -1,0 +1,92 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "ad72ff2d4f4413b4a99a08e125d43e2b.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Springfield_Helpless_01",
+				"File": "expressions/EMO_Springfield_Helpless_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Springfield_Idle_01",
+				"File": "expressions/EMO_Springfield_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Springfield_Serious_01",
+				"File": "expressions/EMO_Springfield_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Springfield_Smirk_01",
+				"File": "expressions/EMO_Springfield_Smirk_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Springfield_Solemn_01",
+				"File": "expressions/EMO_Springfield_Solemn_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Springfield_Surprised_01",
+				"File": "expressions/EMO_Springfield_Surprised_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Springfield_Thinking_01",
+				"File": "expressions/EMO_Springfield_Thinking_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Springfield_Wink_01",
+				"File": "expressions/EMO_Springfield_Wink_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Springfield_happy_01",
+				"File": "expressions/EMO_Springfield_happy_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

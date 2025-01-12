@@ -1,0 +1,248 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -617957439535608110
+  },
+  "m_Name": "EMO_Vepley_Dissatisfied_01.exp3",
+  "Type": "Live2D Expression",
+  "Name": "EMO_Vepley_Dissatisfied_01",
+  "FadeInTime": 0.15,
+  "FadeOutTime": 0.15,
+  "Parameters": [
+    {
+      "Id": "Param9",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param8",
+      "Value": -25.814,
+      "Blend": 0
+    },
+    {
+      "Id": "Param5",
+      "Value": 30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param4",
+      "Value": 30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallX",
+      "Value": -0.047,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallY",
+      "Value": 0.14,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLAngle",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRAngle",
+      "Value": 0.326,
+      "Blend": 0
+    },
+    {
+      "Id": "Param11",
+      "Value": 0.698,
+      "Blend": 0
+    },
+    {
+      "Id": "Param10",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param21",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param20",
+      "Value": 16.047,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRY",
+      "Value": -0.558,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLY",
+      "Value": -0.9,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeLOpen",
+      "Value": 0.965,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeROpen",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLForm",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3",
+      "Value": 30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param22",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param17",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeLSmile",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeRSmile",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param2",
+      "Value": 30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param6",
+      "Value": -15.349,
+      "Blend": 0
+    },
+    {
+      "Id": "Param7",
+      "Value": -14.651,
+      "Blend": 0
+    },
+    {
+      "Id": "Param13",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param12",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRForm",
+      "Value": 0.186,
+      "Blend": 0
+    },
+    {
+      "Id": "Param14",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param16",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param18",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param19",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param23",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamMouthForm",
+      "Value": -1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamMouthOpenY",
+      "Value": -0.1,
+      "Blend": 0
+    },
+    {
+      "Id": "Param15",
+      "Value": -10.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param25",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param24",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param28",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param29",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param26",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param30",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param32",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param31",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param27",
+      "Value": 1.0,
+      "Blend": 0
+    }
+  ]
+}

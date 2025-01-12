@@ -1,0 +1,98 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -617957439535608110
+  },
+  "m_Name": "EMO_Lind_Smile_01.exp3",
+  "Type": "Live2D Expression",
+  "Name": "EMO_Lind_Smile_01",
+  "FadeInTime": 0.15,
+  "FadeOutTime": 0.15,
+  "Parameters": [
+    {
+      "Id": "ParamEyeLBallX",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeLBallY",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeRBallY2",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeRBallX2",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param21",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeLOpen",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeROpen",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param23",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param22",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param2",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param27",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param24",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param26",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param13",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param12",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param20",
+      "Value": 0.0,
+      "Blend": 0
+    }
+  ]
+}

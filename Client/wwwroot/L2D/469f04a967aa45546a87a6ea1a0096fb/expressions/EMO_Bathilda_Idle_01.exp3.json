@@ -1,0 +1,218 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -617957439535608110
+  },
+  "m_Name": "EMO_Bathilda_Idle_01.exp3",
+  "Type": "Live2D Expression",
+  "Name": "EMO_Bathilda_Idle_01",
+  "FadeInTime": 0.15,
+  "FadeOutTime": 0.15,
+  "Parameters": [
+    {
+      "Id": "Paramcankaokaiguan",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Paramcankao",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Paramzuomeicuxi",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLY",
+      "Value": 8.571,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLX",
+      "Value": 9.184,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLAngle",
+      "Value": 9.184,
+      "Blend": 0
+    },
+    {
+      "Id": "Param14",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param15",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Paramzuomeigong",
+      "Value": -12.857,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRX",
+      "Value": -4.286,
+      "Blend": 0
+    },
+    {
+      "Id": "Paramyoumeicuxi",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRY",
+      "Value": 12.245,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRAngle",
+      "Value": -9.184,
+      "Blend": 0
+    },
+    {
+      "Id": "Param17",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param16",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Paramyoumeigong",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Lxiayanjian",
+      "Value": -2.449,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Lshangyanjian",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeLOpen",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Lneiyanjiao",
+      "Value": 5.51,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Lwaiyanjiao",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Lxiayanpi",
+      "Value": 3.061,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeROpen",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Rshangyanjian",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Rxiayanjian",
+      "Value": -4.286,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Rneiyanjiao",
+      "Value": 3.673,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Rxiayanpi",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallX",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Rwaiyanjiao",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamREyeBallX",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallY",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param2REyeBallY",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param10",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamMouthForm1",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Bizuibianxing2",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param20zhoumeikaiguan",
+      "Value": 0.5,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3lianhongkaiguan",
+      "Value": 30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3Rangsyanpi",
+      "Value": 30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamMouthOpenY",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Paramyankuanghong",
+      "Value": -30.0,
+      "Blend": 0
+    }
+  ]
+}

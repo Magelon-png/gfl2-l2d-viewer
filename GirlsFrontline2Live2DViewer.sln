@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirlsFrontline2Live2DViewer.Server", "Server\GirlsFrontline2Live2DViewer.Server.csproj", "{BB286517-3637-4EA1-836E-0F3C92A96633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirlsFrontline2Live2DViewer.Client", "Client\GirlsFrontline2Live2DViewer.Client.csproj", "{35424935-10A4-4CEC-91E7-2A883EB176BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirlsFrontline2Live2DViewer.Shared", "Shared\GirlsFrontline2Live2DViewer.Shared.csproj", "{76943396-A729-4234-80FF-57DFB8F613EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB286517-3637-4EA1-836E-0F3C92A96633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB286517-3637-4EA1-836E-0F3C92A96633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB286517-3637-4EA1-836E-0F3C92A96633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB286517-3637-4EA1-836E-0F3C92A96633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35424935-10A4-4CEC-91E7-2A883EB176BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35424935-10A4-4CEC-91E7-2A883EB176BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35424935-10A4-4CEC-91E7-2A883EB176BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35424935-10A4-4CEC-91E7-2A883EB176BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76943396-A729-4234-80FF-57DFB8F613EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76943396-A729-4234-80FF-57DFB8F613EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76943396-A729-4234-80FF-57DFB8F613EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76943396-A729-4234-80FF-57DFB8F613EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

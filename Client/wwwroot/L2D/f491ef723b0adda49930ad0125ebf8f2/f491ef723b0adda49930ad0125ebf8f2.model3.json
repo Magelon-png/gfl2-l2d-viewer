@@ -1,0 +1,96 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "f491ef723b0adda49930ad0125ebf8f2.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Mosinnagant_Angry_01",
+				"File": "expressions/EMO_Mosinnagant_Angry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Drunk_01",
+				"File": "expressions/EMO_Mosinnagant_Drunk_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Idle_01",
+				"File": "expressions/EMO_Mosinnagant_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Moved_01",
+				"File": "expressions/EMO_Mosinnagant_Moved_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Nervous_01",
+				"File": "expressions/EMO_Mosinnagant_Nervous_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Regretting_01",
+				"File": "expressions/EMO_Mosinnagant_Regretting_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Sad_01",
+				"File": "expressions/EMO_Mosinnagant_Sad_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Serious_01",
+				"File": "expressions/EMO_Mosinnagant_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Smile_01",
+				"File": "expressions/EMO_Mosinnagant_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Mosinnagant_Surprised_01",
+				"File": "expressions/EMO_Mosinnagant_Surprised_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

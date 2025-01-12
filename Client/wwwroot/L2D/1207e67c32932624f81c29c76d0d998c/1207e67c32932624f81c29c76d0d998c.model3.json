@@ -1,0 +1,25 @@
+{
+  "Version": 3,
+  "Name": "1207e67c32932624f81c29c76d0d998c",
+  "FileReferences": {
+    "Moc": "1207e67c32932624f81c29c76d0d998c.moc3",
+    "Textures": [
+			"textures/texture_001.png"
+		],
+    "Physics": null,
+    "Motions": {},
+    "Expressions": []
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": []
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": []
+    }
+  ]
+}

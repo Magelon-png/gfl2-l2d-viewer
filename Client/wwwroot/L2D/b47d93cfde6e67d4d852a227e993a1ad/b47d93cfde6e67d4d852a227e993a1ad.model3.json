@@ -1,0 +1,67 @@
+{
+  "Version": 3,
+  "Name": "b47d93cfde6e67d4d852a227e993a1ad",
+  "FileReferences": {
+    "Moc": "b47d93cfde6e67d4d852a227e993a1ad.moc3",
+    "Textures": [
+      "textures/texture_00.png"
+    ],
+    "Physics": "b47d93cfde6e67d4d852a227e993a1ad.physics3.json",
+    "Motions": {
+      "Mouthopen_10s": [
+        {
+          "File": "motions/Mouthopen_10s.motion3.json"
+        }
+      ],
+      "Mouthopen_2s": [
+        {
+          "File": "motions/Mouthopen_2s.motion3.json"
+        }
+      ],
+      "Mouthopen_5s": [
+        {
+          "File": "motions/Mouthopen_5s.motion3.json"
+        }
+      ]
+    },
+    "Expressions": [
+      {
+        "Name": "cat_starry",
+        "File": "expressions/cat_starry.exp3.json"
+      },
+      {
+        "Name": "cat_embarrassed",
+        "File": "expressions/cat_embarrassed.exp3.json"
+      },
+      {
+        "Name": "cat_standby",
+        "File": "expressions/cat_standby.exp3.json"
+      },
+      {
+        "Name": "cat_laugh",
+        "File": "expressions/cat_laugh.exp3.json"
+      },
+      {
+        "Name": "cat_proud",
+        "File": "expressions/cat_proud.exp3.json"
+      }
+    ]
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthOpenY"
+      ]
+    }
+  ]
+}

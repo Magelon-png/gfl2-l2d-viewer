@@ -1,0 +1,92 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "3c8adc78ce457dd4388e1afab2ca6104.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Macqiato_Angry_01  ",
+				"File": "expressions/EMO_Macqiato_Angry_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Macqiato_Awkward_01  ",
+				"File": "expressions/EMO_Macqiato_Awkward_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Macqiato_Happy_01  ",
+				"File": "expressions/EMO_Macqiato_Happy_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Macqiato_Idle_01  ",
+				"File": "expressions/EMO_Macqiato_Idle_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Macqiato_Proud_01  ",
+				"File": "expressions/EMO_Macqiato_Proud_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Macqiato_Serious_01  ",
+				"File": "expressions/EMO_Macqiato_Serious_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Macqiato_Shy_01  ",
+				"File": "expressions/EMO_Macqiato_Shy_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Macqiato_Surprised_01 ",
+				"File": "expressions/EMO_Macqiato_Surprised_01 .exp3.json"
+			},
+			{
+				"Name": "EMO_Macqiato_Teasing_01  ",
+				"File": "expressions/EMO_Macqiato_Teasing_01  .exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

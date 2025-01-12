@@ -1,0 +1,46 @@
+{
+  "Version": 3,
+  "Name": "4d4531dc159bf264b897c51d860a0ac0",
+  "FileReferences": {
+    "Moc": "4d4531dc159bf264b897c51d860a0ac0.moc3",
+    "Textures": [
+      "textures/texture_00.png"
+    ],
+    "Physics": null,
+    "Motions": {
+      "Mouthopen_10s": [
+        {
+          "File": "motions/Mouthopen_10s.motion3.json"
+        }
+      ],
+      "Mouthopen_2s": [
+        {
+          "File": "motions/Mouthopen_2s.motion3.json"
+        }
+      ],
+      "Mouthopen_5s": [
+        {
+          "File": "motions/Mouthopen_5s.motion3.json"
+        }
+      ]
+    },
+    "Expressions": []
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeROpen",
+        "ParamEyeLOpen"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthOpenY"
+      ]
+    }
+  ]
+}

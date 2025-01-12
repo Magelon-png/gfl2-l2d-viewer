@@ -1,0 +1,88 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "be06bd2a79bb20e48b4e65eec2b9d5b5.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Centaureissi_Confused_01",
+				"File": "expressions/EMO_Centaureissi_Confused_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Centaureissi_Embarrassed_01  ",
+				"File": "expressions/EMO_Centaureissi_Embarrassed_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Centaureissi_Happy_01  ",
+				"File": "expressions/EMO_Centaureissi_Happy_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Centaureissi_Idle_01  ",
+				"File": "expressions/EMO_Centaureissi_Idle_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Centaureissi_Serious_01",
+				"File": "expressions/EMO_Centaureissi_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Centaureissi_Solemn_01   ",
+				"File": "expressions/EMO_Centaureissi_Solemn_01   .exp3.json"
+			},
+			{
+				"Name": "EMO_Centaureissi_Surprised_01  ",
+				"File": "expressions/EMO_Centaureissi_Surprised_01  .exp3.json"
+			},
+			{
+				"Name": "EMO_Centaureissi_Worried_01  ",
+				"File": "expressions/EMO_Centaureissi_Worried_01  .exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

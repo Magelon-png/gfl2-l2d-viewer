@@ -1,0 +1,203 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -617957439535608110
+  },
+  "m_Name": "EMO_Mechty_Pain_01.exp3.exp3",
+  "Type": "Live2D Expression",
+  "Name": "EMO_Mechty_Pain_01",
+  "FadeInTime": 0.15,
+  "FadeOutTime": 0.15,
+  "Parameters": [
+    {
+      "Id": "Param8",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param7",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param16",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param17",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param18",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param19",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param21",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param20",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLY",
+      "Value": -0.6,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLX",
+      "Value": -0.1,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLAngle",
+      "Value": -0.4,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLForm",
+      "Value": -0.429,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowLForm2",
+      "Value": -0.224,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRY",
+      "Value": -0.2,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRX",
+      "Value": 0.7,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRAngle",
+      "Value": 0.408,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRForm",
+      "Value": -0.612,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamBrowRForm2",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param2",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param3",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param4",
+      "Value": -6.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param5",
+      "Value": 30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallLX",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallLY",
+      "Value": -3.673,
+      "Blend": 0
+    },
+    {
+      "Id": "Param11",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param12",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param13",
+      "Value": -30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param14",
+      "Value": -18.8,
+      "Blend": 0
+    },
+    {
+      "Id": "Param15",
+      "Value": 30.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallRX",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeBallRY",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamMouthForm",
+      "Value": 4.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param9",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "Param10",
+      "Value": 0.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeLOpen",
+      "Value": 1.0,
+      "Blend": 0
+    },
+    {
+      "Id": "ParamEyeROpen",
+      "Value": 1.0,
+      "Blend": 0
+    }
+  ]
+}

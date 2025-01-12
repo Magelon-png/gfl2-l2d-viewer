@@ -1,0 +1,96 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "04b5cdf05b69d464e95a4894e6ddccea.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Littara_Angry_01",
+				"File": "expressions/EMO_Littara_Angry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Embarrassed_01",
+				"File": "expressions/EMO_Littara_Embarrassed_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Idle_01",
+				"File": "expressions/EMO_Littara_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Nervous_01",
+				"File": "expressions/EMO_Littara_Nervous_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Sad_01",
+				"File": "expressions/EMO_Littara_Sad_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Serious_01",
+				"File": "expressions/EMO_Littara_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Shy_01",
+				"File": "expressions/EMO_Littara_Shy_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Smile_01",
+				"File": "expressions/EMO_Littara_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Surprised_01",
+				"File": "expressions/EMO_Littara_Surprised_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Littara_Think_01",
+				"File": "expressions/EMO_Littara_Think_01.exp3.json"
+			}
+		],
+		"Motions": {
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"OFF": [
+				{
+					"File": "motions/OFF.motion3.json"
+				}
+			],
+			"ON": [
+				{
+					"File": "motions/ON.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

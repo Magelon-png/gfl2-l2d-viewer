@@ -1,0 +1,53 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "469f04a967aa45546a87a6ea1a0096fb.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Bathilda_Angry_01",
+				"File": "expressions/EMO_Bathilda_Angry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Bathilda_Annoyed_01",
+				"File": "expressions/EMO_Bathilda_Annoyed_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Bathilda_Idle_01",
+				"File": "expressions/EMO_Bathilda_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Bathilda_Sad_01",
+				"File": "expressions/EMO_Bathilda_Sad_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Bathilda_Smile_01",
+				"File": "expressions/EMO_Bathilda_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Bathilda_Worry_01",
+				"File": "expressions/EMO_Bathilda_Worry_01.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeROpen",
+				"ParamEyeLOpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

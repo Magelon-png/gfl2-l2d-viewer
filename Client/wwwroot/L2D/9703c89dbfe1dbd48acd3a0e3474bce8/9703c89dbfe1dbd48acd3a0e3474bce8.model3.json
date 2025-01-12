@@ -1,0 +1,69 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "9703c89dbfe1dbd48acd3a0e3474bce8.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "EMO_Suomi_Awkwar_01",
+				"File": "expressions/EMO_Suomi_Awkwar_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Confused_01",
+				"File": "expressions/EMO_Suomi_Confused_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Cry_01",
+				"File": "expressions/EMO_Suomi_Cry_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Disapponintment_01",
+				"File": "expressions/EMO_Suomi_Disapponintment_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Eager_01",
+				"File": "expressions/EMO_Suomi_Eager_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Idle_01",
+				"File": "expressions/EMO_Suomi_Idle_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Panic_01",
+				"File": "expressions/EMO_Suomi_Panic_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Serious_01",
+				"File": "expressions/EMO_Suomi_Serious_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Smile_01",
+				"File": "expressions/EMO_Suomi_Smile_01.exp3.json"
+			},
+			{
+				"Name": "EMO_Suomi_Think_01",
+				"File": "expressions/EMO_Suomi_Think_01.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeROpen",
+				"ParamEyeLOpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

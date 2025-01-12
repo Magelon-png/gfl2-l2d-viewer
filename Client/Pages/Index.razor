@@ -1,0 +1,102 @@
+﻿@page "/"
+@implements IAsyncDisposable
+
+<PageTitle>Index</PageTitle>
+
+<MudGrid>
+
+    <MudItem lg="3">
+        <MudContainer>
+
+            @if (Live2DMapping is not null)
+            {
+                <MudSelect Label="Select a character" Placeholder="Please select" @bind-Value="selectedModel"
+                           @bind-Value:after="OnSelectedModelChanged">
+                    @foreach (var mapping in Live2DMapping)
+                    {
+                        <MudSelectItem Value="mapping.Key">@mapping.Key</MudSelectItem>
+                    }
+                </MudSelect>
+
+                @* <InputCheckbox @bind-Value="eyeTrackingEnabled" @bind-Value:after="OnEyeTrackingEnabled"> *@
+                @*     Eye tracking Not working due to pixel sized center? *@
+                @* </InputCheckbox> *@
+
+                @if (selectedModelObject is not null)
+                {
+                    <MudTabs Class="pt-3 pb-3">
+                        <MudTabPanel  Text="Interactions">
+                            <div class="pt-3 pb-3">
+                                @if (selectedModelObject?.Expressions is not null && selectedModelObject.Expressions.Length > 0)
+                                {
+                                    <MudSelect Class="pt-2" Label="Select an expression" Placeholder="Default"
+                                               @bind-Value="selectedExpression"
+                                               @bind-Value:after="OnSelectedExpressionChanged">
+                                        @foreach (var expression in selectedModelObject.Expressions)
+                                        {
+                                            <MudSelectItem Value="@expression.Name">@expression.Name</MudSelectItem>
+                                        }
+                                    </MudSelect>
+                                }
+                                @if (selectedModelObject?.Motions is not null && selectedModelObject.Motions.Count > 0)
+                                {
+                                    <div class="pt-2">
+                                        <MudTooltip Inline="true">
+                                            <ChildContent>
+                                                <MudIconButton Icon="@Icons.Material.Filled.Info"/>
+                                            </ChildContent>
+                                            <TooltipContent>
+                                                <MudText Typo="Typo.caption">Due to the extract process being
+                                                    incomplete. Some motions had to be added manually which may or may
+                                                    not be invalid for the current character.
+                                                </MudText>
+                                            </TooltipContent>
+                                        </MudTooltip>
+                                        <MudText Inline="true" Typo="Typo.body1">Motions:</MudText>
+                                    </div>
+                                    <MudButtonGroup Class="pt-2" Vertical="true" Variant="Variant.Filled"
+                                                    Size="Size.Medium" Color="Color.Primary">
+                                        @foreach (var motion in selectedModelObject.Motions)
+                                        {
+                                            <MudButton
+                                                OnClick="@(async () => await OnMotionButtonClicked(motion.Key))">@motion.Key</MudButton>
+                                        }
+                                    </MudButtonGroup>
+                                }
+                            </div>
+
+
+                            <MudSlider Class="pt-2" Max="1.5" Min="0.01" Step="0.01" ValueLabel="true"
+                                       ValueLabelFormat="0.00"
+                                       @bind-Value="modelScale" @bind-Value:after="OnModelScaleChanged">
+                                Scale: @modelScale</MudSlider>
+                        </MudTabPanel>
+
+                        <MudTabPanel Text="Parameters"
+                                     Disabled="@(selectedModelObject?.Parameters is null || selectedModelObject?.Parameters.Length == 0 
+                                                 || !selectedModelEditable)">
+                            @if (selectedModelObject?.Parameters is not null)
+                            {
+                                <div class="pt-3 pb-3">
+                                    @foreach (var parameter in selectedModelObject.Parameters)
+                                    {
+                                        <MudText Typo="Typo.body1">@parameter</MudText>
+                                    }
+                                </div>
+                            }
+                        </MudTabPanel>
+                    </MudTabs>
+                }
+            }
+
+            <MudContainer Class="pt-2">
+            </MudContainer>
+        </MudContainer>
+    </MudItem>
+    <MudItem Style="overflow-x: hidden;" lg="8">
+        <canvas style="display: block; max-height: 90vh; margin: auto;" class="draggable" id="canvas"></canvas>
+    </MudItem>
+
+
+</MudGrid>
+
