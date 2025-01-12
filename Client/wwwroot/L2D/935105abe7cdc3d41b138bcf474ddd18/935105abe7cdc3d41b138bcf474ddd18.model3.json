@@ -59,7 +59,49 @@
 				"Name": "EMO_Helena_Wronged_01",
 				"File": "expressions/EMO_Helena_Wronged_01.exp3.json"
 			}
-		]
+		],
+			"Motions": {
+			"Balloff": [
+				{
+					"File": "motions/Balloff.motion3.json"
+				}
+			],
+			"BalloffContinue": [
+				{
+					"File": "motions/BalloffContinue.motion3.json"
+				}
+			],
+			"Ballon": [
+				{
+					"File": "motions/Ballon.motion3.json"
+				}
+			],
+			"BallonContinue": [
+				{
+					"File": "motions/BallonContinue.motion3.json"
+				}
+			],
+			"Mouthopen_10s": [
+				{
+					"File": "motions/Mouthopen_10s.motion3.json"
+				}
+			],
+			"Mouthopen_2s": [
+				{
+					"File": "motions/Mouthopen_2s.motion3.json"
+				}
+			],
+			"Mouthopen_5s": [
+				{
+					"File": "motions/Mouthopen_5s.motion3.json"
+				}
+			],
+			"Noball": [
+				{
+					"File": "motions/Noball.motion3.json"
+				}
+			]
+		}
 	},
 	"Groups": [
 		{
