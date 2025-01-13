@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirlsFrontline2Live2DViewer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirlsFrontline2Live2DViewer.Shared", "Shared\GirlsFrontline2Live2DViewer.Shared.csproj", "{76943396-A729-4234-80FF-57DFB8F613EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirlsFrontline2Live2DViewer.WebApp", "GirlsFrontline2Live2DViewer.WebApp\GirlsFrontline2Live2DViewer.WebApp.csproj", "{CA311E10-6C88-403A-BA87-C462792E49D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{76943396-A729-4234-80FF-57DFB8F613EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76943396-A729-4234-80FF-57DFB8F613EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76943396-A729-4234-80FF-57DFB8F613EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA311E10-6C88-403A-BA87-C462792E49D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA311E10-6C88-403A-BA87-C462792E49D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA311E10-6C88-403A-BA87-C462792E49D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA311E10-6C88-403A-BA87-C462792E49D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

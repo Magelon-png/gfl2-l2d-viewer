@@ -1,3 +1,16 @@
 ﻿.draggable {
     cursor: move !important;
+    max-height: 90vh;
+    display: block; 
+    margin: auto;
+}
+
+@media only screen and (max-width: 1280px) {
+    .draggable {
+        cursor: move !important;
+        max-width: 100vw !important;
+        max-height: 100vh;
+        display: block;
+        margin: auto;
+    }
 }

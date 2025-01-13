@@ -85,10 +85,10 @@
                             @if (selectedModelObject?.Parameters is not null)
                             {
                                 var acc = 0;
-                                <div class="pt-3 pb-3" style="max-height: 80vh; max-width: 90%; overflow-y: auto; margin: auto;">
+                                <div class="pt-3 pb-3" style="max-height: 80vh; overflow-y: auto; margin: auto;">
                                     @foreach (var parameter in selectedModelObject.Parameters)
                                     {
-                                        <div style="max-width: 90%; margin: auto; display: block">
+                                        <div style="max-width: 70%; margin: auto; display: block">
                                             <MudSlider
                                                 Class="pt-2" Max="@selectedModelObject.ParametersValueRange.MaxValues[acc]"
                                                 Min="@selectedModelObject.ParametersValueRange.MinValues[acc]"
@@ -116,7 +116,7 @@
     </MudItem>
     <MudItem Style="overflow-x: hidden;" lg="8">
         <div @onwheel="@(OnL2dScroll)">
-            <canvas style="display: block; max-height: 90vh; margin: auto;" class="draggable" id="canvas"></canvas>
+            <canvas class="draggable" id="canvas"></canvas>
         </div>
         
     </MudItem>
