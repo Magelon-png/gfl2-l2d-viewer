@@ -14,6 +14,7 @@ public partial class Index
     [Inject] public HttpClient HttpClient { get; set; }
     
     [Inject] public ISnackbar Snackbar { get; set; }
+    [Parameter] public string? ModelUri { get; set; }
 
     private IJSObjectReference? module;
     private Dictionary<string, string>? Live2DMapping = null;
@@ -32,11 +33,14 @@ public partial class Index
 
     protected override async Task OnInitializedAsync()
     {
-        Live2DMapping = await HttpClient.GetFromJsonAsync<Dictionary<string, string>>("L2D/mapping.json", new JsonSerializerOptions()
+        if (Live2DMapping is null)
         {
-            ReadCommentHandling = JsonCommentHandling.Skip
-        });
-        Live2DMapping = Live2DMapping!.OrderBy(x => x.Key).ToDictionary();
+            Live2DMapping = await HttpClient.GetFromJsonAsync<Dictionary<string, string>>("L2D/mapping.json", new JsonSerializerOptions()
+            {
+                ReadCommentHandling = JsonCommentHandling.Skip
+            });
+            Live2DMapping = Live2DMapping!.OrderBy(x => x.Key).ToDictionary();
+        }
     }
 
     protected async override Task OnAfterRenderAsync(bool firstRender)
@@ -44,38 +48,58 @@ public partial class Index
         if (firstRender)
         {
             module = await JsRuntime.InvokeAsync<IJSObjectReference>("import", "./Pages/Index.razor.js");
+            if (!string.IsNullOrWhiteSpace(ModelUri))
+            {
+                if (Live2DMapping is null)
+                {
+                    Live2DMapping = await HttpClient.GetFromJsonAsync<Dictionary<string, string>>("L2D/mapping.json", new JsonSerializerOptions()
+                    {
+                        ReadCommentHandling = JsonCommentHandling.Skip
+                    });
+                    Live2DMapping = Live2DMapping!.OrderBy(x => x.Key).ToDictionary();
+                }
+                await UpdateModelAsync(ModelUri);
+            }
         }
     }
+
+    private async Task UpdateModelAsync(string? modelName)
+    {
+        try
+        {
+            selectedModel = modelName ?? selectedModel;
+            selectedModelObject = await module.InvokeAsync<L2dModel>("loadModel",
+                $"L2D/{Live2DMapping[selectedModel]}/{Live2DMapping[selectedModel]}.model3.json");
+            if (selectedModelObject is not null)
+            {
+                ResetValues();
+                
+            }
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add("Failed to load the selected model. Please check the console for more details.", Severity.Error);
+            Console.WriteLine(ex.Message);
+            ResetValues();
+            modelScale = 0;
+        }
+        await InvokeAsync(() => StateHasChanged());
+
+    } 
 
     public async void OnSelectedModelChanged()
     {
         Console.WriteLine($"Selected model is now at {selectedModel}");
         if (module is not null && Live2DMapping is not null && selectedModel is not null)
         {
-            try
-            {
-                selectedModelObject = await module.InvokeAsync<L2dModel>("loadModel",
-                    $"L2D/{Live2DMapping[selectedModel]}/{Live2DMapping[selectedModel]}.model3.json");
-                if (selectedModelObject is not null)
-                {
-                    ResetValues();
+            await UpdateModelAsync(selectedModel);
 
-                }
-            }
-            catch (Exception ex)
-            {
-                Snackbar.Add("Failed to load the selected model. Please check the console for more details.", Severity.Error);
-                Console.WriteLine(ex.Message);
-                selectedModelObject = null;
-                modelScale = 0;
-            }
-
-            await InvokeAsync(() => StateHasChanged());
         }
     }
 
     public void ResetValues()
     {
+        Console.WriteLine($"Resetting model values");
         modelScale = selectedModelObject?.Scale ?? 0.2;
         selectedExpression = null;
         parameterEditingEnabled = false;
