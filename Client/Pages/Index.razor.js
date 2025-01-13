@@ -114,6 +114,9 @@ export async function loadModel(modelPath) {
 
     scale = Math.round(scale * 10) / 10;
     
+    //On phones, scale may equal to 0 by default
+    scale = scale === 0 ? 0.15 : scale;
+    
     l2dModel.scale.set(scale, scale);
     
     const returnValue = new L2dModel(l2dModel.internalModel.settings?.motions,
@@ -203,6 +206,7 @@ function dragElement(elmnt) {
     } else {
         // otherwise, move the DIV from anywhere inside the DIV:
         elmnt.onmousedown = dragMouseDown;
+        elmnt.ontouchstart = dragTouchStart;
     }
 
     function dragMouseDown(e) {
@@ -214,6 +218,16 @@ function dragElement(elmnt) {
         document.onmouseup = closeDragElement;
         // call a function whenever the cursor moves:
         document.onmousemove = elementDrag;
+    }
+    
+    function dragTouchStart(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the touch position at startup:
+        pos3 = e.touches[0].clientX;
+        pos4 = e.touches[0].clientY;
+        document.ontouchend = closeTouchMoveElement;
+        document.ontouchmove = elementTouchMove;
     }
 
     function elementDrag(e) {
@@ -228,11 +242,30 @@ function dragElement(elmnt) {
         l2dModel.position.y = (l2dModel.position.y - pos2);
         l2dModel.position.x = (l2dModel.position.x - pos1) ;
     }
+    
+    function elementTouchMove(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.touches[0].clientX;
+        pos2 = pos4 - e.touches[0].clientY;
+        pos3 = e.touches[0].clientX;
+        pos4 = e.touches[0].clientY;
+        // set the element's new position:
+        l2dModel.position.y = (l2dModel.position.y - pos2);
+        l2dModel.position.x = (l2dModel.position.x - pos1) ;
+    }
 
     function closeDragElement() {
         // stop moving when mouse button is released:
         document.onmouseup = null;
         document.onmousemove = null;
+    }
+    
+    function closeTouchMoveElement() {
+        // stop moving when touch is released:
+        document.ontouchend = null;
+        document.ontouchmove = null;
     }
 }
 //#endregion
