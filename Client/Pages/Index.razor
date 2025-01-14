@@ -6,7 +6,7 @@
 
 <MudGrid>
 
-    <MudItem lg="3">
+    <MudItem lg="3" md="12">
         <MudContainer>
 
             @if (Live2DMapping is not null)
@@ -115,7 +115,7 @@
             </MudContainer>
         </MudContainer>
     </MudItem>
-    <MudItem Style="overflow-x: hidden;" lg="8">
+    <MudItem Style="overflow-x: hidden;" md="12" lg="9">
         <div @onwheel="@(OnL2dScroll)">
             <canvas class="draggable" id="canvas"></canvas>
         </div>
